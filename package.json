@@ -34,7 +34,9 @@
     "axios": "^1.4.0",
     "clsx": "^1.2.1",
     "dayjs": "^1.11.7",
+    "isomorphic.js": "^0.2.5",
     "lexical": "^0.10.0",
+    "lib0": "^0.2.83",
     "lodash.debounce": "^4.0.8",
     "next": "^13.4.6",
     "react": "18.2.0",
@@ -45,6 +47,7 @@
     "react-icons": "^4.8.0",
     "react-split": "^2.0.14",
     "superjson": "1.12.2",
+    "yjs": "^13.6.7",
     "zod": "^3.21.4"
   },
   "devDependencies": {
