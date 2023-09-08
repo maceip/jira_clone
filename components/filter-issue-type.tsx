@@ -4,15 +4,15 @@ import {
   DropdownItem,
   DropdownPortal,
   DropdownTrigger,
-} from "@/components/ui/dropdown-menu";
+} from "components/ui/dropdown-menu";
 import { FaChevronDown } from "react-icons/fa";
-import { capitalize } from "@/utils/helpers";
-import { TooltipWrapper } from "@/components/ui/tooltip";
-import { type IssueType } from "@/utils/types";
-import { ISSUE_TYPES } from "@/components/issue/issue-select-type";
-import { IssueIcon } from "@/components/issue/issue-icon";
-import { useFiltersContext } from "@/context/use-filters-context";
-import { Button } from "@/components/ui/button";
+import { capitalize } from "utils/helpers";
+import { TooltipWrapper } from "components/ui/tooltip";
+import { type IssueType } from "utils/types";
+import { ISSUE_TYPES } from "components/issue/issue-select-type";
+import { IssueIcon } from "components/issue/issue-icon";
+import { useFiltersContext } from "context/use-filters-context";
+import { Button } from "components/ui/button";
 import { CountBall } from "./issue/issue-status-count";
 
 const IssueTypeFilter: React.FC = () => {

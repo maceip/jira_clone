@@ -1,10 +1,10 @@
 import { type NextRequest, NextResponse } from "next/server";
-import { prisma } from "@/server/db";
+import { prisma } from "server/db";
 // import { clerkClient } from "@clerk/nextjs/server";
-// import { filterUserForClient } from "@/utils/helpers";
+// import { filterUserForClient } from "utils/helpers";
 import { type DefaultUser } from "@prisma/client";
 import { clerkClient } from "@clerk/nextjs";
-import { filterUserForClient } from "@/utils/helpers";
+import { filterUserForClient } from "utils/helpers";
 
 export type GetProjectMembersResponse = {
   members: DefaultUser[];

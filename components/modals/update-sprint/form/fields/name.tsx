@@ -1,7 +1,7 @@
 import { type FieldErrors, type UseFormRegister } from "react-hook-form";
 import { type FormValues } from "..";
-import { Label } from "@/components/form/label";
-import { Error } from "@/components/form/error";
+import { Label } from "components/form/label";
+import { Error } from "components/form/error";
 import clsx from "clsx";
 
 const NameField: React.FC<{

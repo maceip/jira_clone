@@ -1,20 +1,20 @@
 import { IssueIcon } from "../../issue-icon";
 import { IssueTitle } from "../../issue-title";
-import { Button } from "@/components/ui/button";
+import { Button } from "components/ui/button";
 import { IssueContextMenu } from "../../issue-menu";
 import { MdEdit } from "react-icons/md";
 import { IssueSelectStatus } from "../../issue-select-status";
 import { IssueAssigneeSelect } from "../../issue-select-assignee";
 import clsx from "clsx";
-import { useSelectedIssueContext } from "@/context/use-selected-issue-context";
+import { useSelectedIssueContext } from "context/use-selected-issue-context";
 import { Fragment, useRef, useState } from "react";
-import { ContextTrigger } from "@/components/ui/context-menu";
-import { type IssueType } from "@/utils/types";
+import { ContextTrigger } from "components/ui/context-menu";
+import { type IssueType } from "utils/types";
 import { AiOutlinePlus } from "react-icons/ai";
-import { EmtpyIssue } from "@/components/issue/issue-empty";
-import { useIssues } from "@/hooks/query-hooks/use-issues";
-import { ProgressBar } from "@/components/progress-bar";
-import { useIsAuthenticated } from "@/hooks/use-is-authed";
+import { EmtpyIssue } from "components/issue/issue-empty";
+import { useIssues } from "hooks/query-hooks/use-issues";
+import { ProgressBar } from "components/progress-bar";
+import { useIsAuthenticated } from "hooks/use-is-authed";
 
 const ChildIssueList: React.FC<{
   issues: IssueType[];

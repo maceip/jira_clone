@@ -4,7 +4,7 @@ import {
   PopoverContent,
   PopoverPortal,
   PopoverTrigger,
-} from "@/components/ui/pop-over";
+} from "components/ui/pop-over";
 import { AiFillGithub } from "react-icons/ai";
 
 const NotImplemented: React.FC<{ children: ReactNode; feature?: string }> = ({

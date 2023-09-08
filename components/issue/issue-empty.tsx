@@ -5,7 +5,7 @@ import { IssueSelectType } from "./issue-select-type";
 import { Button } from "../ui/button";
 import { MdCheck, MdClose } from "react-icons/md";
 import { Spinner } from "../ui/spinner";
-import { type IssueType } from "@/utils/types";
+import { type IssueType } from "utils/types";
 import { IssueIcon } from "./issue-icon";
 
 const EmtpyIssue: React.FC<{

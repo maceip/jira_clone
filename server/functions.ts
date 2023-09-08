@@ -1,4 +1,4 @@
-import { filterUserForClient, generateIssuesForClient } from "@/utils/helpers";
+import { filterUserForClient, generateIssuesForClient } from "utils/helpers";
 import { type UserResource } from "@clerk/types";
 import { clerkClient } from "@clerk/nextjs";
 import {

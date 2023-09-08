@@ -7,8 +7,8 @@ import {
   DropdownItem,
   DropdownLabel,
   DropdownPortal,
-} from "@/components/ui/dropdown-menu";
-import { type MenuOptionType } from "@/utils/types";
+} from "components/ui/dropdown-menu";
+import { type MenuOptionType } from "utils/types";
 
 type SprintDropdownMenuProps = {
   children: ReactNode;

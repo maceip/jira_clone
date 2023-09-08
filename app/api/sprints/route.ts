@@ -1,4 +1,4 @@
-import { prisma, ratelimit } from "@/server/db";
+import { prisma, ratelimit } from "server/db";
 import { getAuth } from "@clerk/nextjs/server";
 import { SprintStatus, type Sprint } from "@prisma/client";
 import { type NextRequest, NextResponse } from "next/server";

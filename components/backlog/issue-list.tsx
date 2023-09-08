@@ -1,17 +1,17 @@
 "use client";
 import { useState } from "react";
-import { useIssues } from "@/hooks/query-hooks/use-issues";
+import { useIssues } from "hooks/query-hooks/use-issues";
 import { Droppable } from "react-beautiful-dnd";
 import { AccordionContent } from "../ui/accordion";
 import { Issue } from "./issue";
 import { Button } from "../ui/button";
 import { AiOutlinePlus } from "react-icons/ai";
 import { EmtpyIssue } from "../issue/issue-empty";
-import { type IssueType } from "@/utils/types";
+import { type IssueType } from "utils/types";
 import clsx from "clsx";
 import { useUser } from "@clerk/clerk-react";
-import { useStrictModeDroppable } from "@/hooks/use-strictmode-droppable";
-import { useIsAuthenticated } from "@/hooks/use-is-authed";
+import { useStrictModeDroppable } from "hooks/use-strictmode-droppable";
+import { useIsAuthenticated } from "hooks/use-is-authed";
 
 const IssueList: React.FC<{ sprintId: string | null; issues: IssueType[] }> = ({
   sprintId,

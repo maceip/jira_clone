@@ -1,5 +1,5 @@
 import { type NextRequest, NextResponse } from "next/server";
-import { prisma, ratelimit } from "@/server/db";
+import { prisma, ratelimit } from "server/db";
 import {
   IssueType,
   type Issue,
@@ -12,7 +12,7 @@ import {
   calculateInsertPosition,
   filterUserForClient,
   generateIssuesForClient,
-} from "@/utils/helpers";
+} from "utils/helpers";
 import { clerkClient } from "@clerk/nextjs";
 
 const postIssuesBodyValidator = z.object({

@@ -1,16 +1,16 @@
 "use client";
 import { Button } from "../ui/button";
 import { IssueSelectType } from "./issue-select-type";
-import { type IssueType } from "@/utils/types";
+import { type IssueType } from "utils/types";
 import { IssueSelectEpic } from "./issue-select-epic";
 import { toast } from "../toast";
 import { IssueIcon } from "./issue-icon";
 import { AiOutlinePlus } from "react-icons/ai";
-import { isEpic } from "@/utils/helpers";
+import { isEpic } from "utils/helpers";
 import { type ReactNode } from "react";
-import { useIssues } from "@/hooks/query-hooks/use-issues";
+import { useIssues } from "hooks/query-hooks/use-issues";
 import { TooltipWrapper } from "../ui/tooltip";
-import { useIsAuthenticated } from "@/hooks/use-is-authed";
+import { useIsAuthenticated } from "hooks/use-is-authed";
 
 const IssuePath: React.FC<{
   issue: IssueType;

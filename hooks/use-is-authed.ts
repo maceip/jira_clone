@@ -1,5 +1,5 @@
 "use client";
-import { useAuthModalContext } from "@/context/use-auth-modal";
+import { useAuthModalContext } from "context/use-auth-modal";
 import { useUser } from "@clerk/clerk-react";
 
 export const useIsAuthenticated = (): [string | undefined, () => void] => {

@@ -5,7 +5,7 @@ import {
   ModalOverlay,
   ModalPortal,
   ModalTitle,
-} from "@/components/ui/modal";
+} from "components/ui/modal";
 import { type Sprint } from "@prisma/client";
 import { UpdateSprintForm } from "./form";
 

@@ -5,7 +5,7 @@ import { RichTextPlugin } from "@lexical/react/LexicalRichTextPlugin";
 import { ContentEditable } from "@lexical/react/LexicalContentEditable";
 import { ListPlugin } from "@lexical/react/LexicalListPlugin";
 import CodeHighlightPlugin from "./plugins/code-highlight-plugin";
-import { EditorComposer } from "./context/lexical-composer";
+import { EditorComposer } from "./context/shared-history";
 import { type EditorContentType } from "./editor";
 import clsx from "clsx";
 

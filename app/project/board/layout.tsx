@@ -1,5 +1,5 @@
-import { Container } from "@/components/ui/container";
-import { SelectedIssueProvider } from "@/context/use-selected-issue-context";
+import { Container } from "components/ui/container";
+import { SelectedIssueProvider } from "context/use-selected-issue-context";
 
 const BoardLayout = ({ children }: { children: React.ReactNode }) => {
   return (

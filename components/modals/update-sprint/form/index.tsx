@@ -7,9 +7,9 @@ import { DurationField } from "./fields/duration";
 import { StartDateField } from "./fields/start-date";
 import { EndDateField } from "./fields/end-date";
 import { DescriptionField } from "./fields/description";
-import { useSprints } from "@/hooks/query-hooks/use-sprints";
-import { FormSubmit } from "@/components/form/submit";
-import { useIsAuthenticated } from "@/hooks/use-is-authed";
+import { useSprints } from "hooks/query-hooks/use-sprints";
+import { FormSubmit } from "components/form/submit";
+import { useIsAuthenticated } from "hooks/use-is-authed";
 
 export type FormValues = {
   name: string;

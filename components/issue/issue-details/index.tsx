@@ -1,10 +1,10 @@
 "use client";
 import React, { useCallback, useEffect, useState } from "react";
-import { useIssues } from "@/hooks/query-hooks/use-issues";
-import { useIsInViewport } from "@/hooks/use-is-in-viewport";
+import { useIssues } from "hooks/query-hooks/use-issues";
+import { useIsInViewport } from "hooks/use-is-in-viewport";
 import { IssueDetailsHeader } from "./issue-details-header";
 import { IssueDetailsInfo } from "./issue-details-info";
-import { type IssueType } from "@/utils/types";
+import { type IssueType } from "utils/types";
 
 const IssueDetails: React.FC<{
   issueKey: string | null;

@@ -1,13 +1,13 @@
 "use client";
-import { api } from "@/utils/api";
+import { api } from "utils/api";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
-import { useSelectedIssueContext } from "@/context/use-selected-issue-context";
-import { type GetIssueCommentsResponse } from "@/app/api/issues/[issueId]/comments/route";
-import { toast } from "@/components/toast";
+import { useSelectedIssueContext } from "context/use-selected-issue-context";
+import { type GetIssueCommentsResponse } from "./app/api/issues/[issueId]/comments/route";
+import { toast } from "components/toast";
 import { type AxiosError } from "axios";
 import { TOO_MANY_REQUESTS, useIssues } from "./use-issues";
 import { useCallback, useEffect, useState } from "react";
-import { type IssueType } from "@/utils/types";
+import { type IssueType } from "utils/types";
 
 export const useIssueDetails = () => {
   const { issueKey } = useSelectedIssueContext();

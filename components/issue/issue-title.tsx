@@ -1,10 +1,10 @@
 import React, { Fragment, useEffect, useState } from "react";
-import { useIssues } from "@/hooks/query-hooks/use-issues";
+import { useIssues } from "hooks/query-hooks/use-issues";
 import { Button } from "../ui/button";
 import { MdCheck, MdClose } from "react-icons/md";
-import { type IssueType } from "@/utils/types";
+import { type IssueType } from "utils/types";
 import { TooltipWrapper } from "../ui/tooltip";
-import { useIsAuthenticated } from "@/hooks/use-is-authed";
+import { useIsAuthenticated } from "hooks/use-is-authed";
 
 type IssueTitleProps = {
   isEditing: boolean;

@@ -7,15 +7,15 @@ import {
 } from "../ui/accordion";
 import { FaChevronRight } from "react-icons/fa";
 import { IssueIcon } from "../issue/issue-icon";
-import { useIssues } from "@/hooks/query-hooks/use-issues";
+import { useIssues } from "hooks/query-hooks/use-issues";
 import clsx from "clsx";
 import { IssueSelectStatus } from "../issue/issue-select-status";
 import { IssueAssigneeSelect } from "../issue/issue-select-assignee";
 import { AiOutlinePlus } from "react-icons/ai";
 import { Button } from "../ui/button";
-import { useSelectedIssueContext } from "@/context/use-selected-issue-context";
+import { useSelectedIssueContext } from "context/use-selected-issue-context";
 import { EmtpyIssue } from "../issue/issue-empty";
-import { type IssueType } from "@/utils/types";
+import { type IssueType } from "utils/types";
 import { useUser } from "@clerk/clerk-react";
 import { LIGHT_COLORS } from "../color-picker";
 import {
@@ -25,10 +25,10 @@ import {
   issueNotInSearch,
   issueSprintNotInFilters,
   issueTypeNotInFilters,
-} from "@/utils/helpers";
-import { useFiltersContext } from "@/context/use-filters-context";
-import { ProgressBar } from "@/components/progress-bar";
-import { useIsAuthenticated } from "@/hooks/use-is-authed";
+} from "utils/helpers";
+import { useFiltersContext } from "context/use-filters-context";
+import { ProgressBar } from "components/progress-bar";
+import { useIsAuthenticated } from "hooks/use-is-authed";
 
 type CreateIssueProps = {
   name: string;

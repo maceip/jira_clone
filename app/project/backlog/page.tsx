@@ -1,14 +1,14 @@
-import { Backlog } from "@/components/backlog";
+import { Backlog } from "components/backlog";
 import { type Metadata } from "next";
-import { getQueryClient } from "@/utils/get-query-client";
+import { getQueryClient } from "utils/get-query-client";
 import { dehydrate } from "@tanstack/query-core";
-import { Hydrate } from "@/utils/hydrate";
+import { Hydrate } from "utils/hydrate";
 import { currentUser } from "@clerk/nextjs";
 import {
   getInitialIssuesFromServer,
   getInitialProjectFromServer,
   getInitialSprintsFromServer,
-} from "@/server/functions";
+} from "server/functions";
 
 export const metadata: Metadata = {
   title: "Backlog",

@@ -1,4 +1,4 @@
-import { type IssueType } from "@/utils/types";
+import { type IssueType } from "utils/types";
 import clsx from "clsx";
 import { Draggable } from "react-beautiful-dnd";
 import { IssueIcon } from "../issue/issue-icon";
@@ -6,10 +6,10 @@ import { Avatar } from "../avatar";
 import { IssueDropdownMenu } from "../issue/issue-menu";
 import { DropdownTrigger } from "../ui/dropdown-menu";
 import { BsThreeDots } from "react-icons/bs";
-import { isEpic } from "@/utils/helpers";
+import { isEpic } from "utils/helpers";
 import { EpicName } from "../backlog/issue";
 
-import { useSelectedIssueContext } from "@/context/use-selected-issue-context";
+import { useSelectedIssueContext } from "context/use-selected-issue-context";
 
 const Issue: React.FC<{ issue: IssueType; index: number }> = ({
   issue,

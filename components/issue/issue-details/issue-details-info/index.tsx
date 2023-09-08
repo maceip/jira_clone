@@ -1,22 +1,22 @@
 import React, { Fragment, useRef, useState } from "react";
-import { NotImplemented } from "@/components/not-implemented";
-import { LightningIcon } from "@/components/svgs";
+import { NotImplemented } from "components/not-implemented";
+import { LightningIcon } from "components/svgs";
 import { IssueTitle } from "../../issue-title";
 import { IssueSelectStatus } from "../../issue-select-status";
-import { useSelectedIssueContext } from "@/context/use-selected-issue-context";
-import { type IssueType } from "@/utils/types";
-import { Button } from "@/components/ui/button";
+import { useSelectedIssueContext } from "context/use-selected-issue-context";
+import { type IssueType } from "utils/types";
+import { Button } from "components/ui/button";
 import { Comments } from "./issue-details-info-comments";
 import { IssueMetaInfo } from "./issue-details-info-meta";
 import { Description } from "./issue-details-info-description";
 import { IssueDetailsInfoAccordion } from "./issue-details-info-accordion";
 import { IssueDetailsInfoActions } from "./issue-details-info-actions";
 import { ChildIssueList } from "./issue-details-info-child-issues";
-import { hasChildren, isEpic } from "@/utils/helpers";
-import { ColorPicker } from "@/components/color-picker";
-import { useContainerWidth } from "@/hooks/use-container-width";
+import { hasChildren, isEpic } from "utils/helpers";
+import { ColorPicker } from "components/color-picker";
+import { useContainerWidth } from "hooks/use-container-width";
 import Split from "react-split";
-import "@/styles/split.css";
+import "styles/split.css";
 
 const IssueDetailsInfo = React.forwardRef<
   HTMLDivElement,

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { TooltipWrapper } from "./ui/tooltip";
-import { UnassignedUser } from "@/components/svgs";
+import { UnassignedUser } from "components/svgs";
 type AvatarProps = {
   src: string | null | undefined;
   alt: string;

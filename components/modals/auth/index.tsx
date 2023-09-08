@@ -5,8 +5,8 @@ import {
   ModalContent,
   ModalOverlay,
   ModalPortal,
-} from "@/components/ui/modal";
-import { useAuthModalContext } from "@/context/use-auth-modal";
+} from "components/ui/modal";
+import { useAuthModalContext } from "context/use-auth-modal";
 import { SignIn } from "@clerk/clerk-react";
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";

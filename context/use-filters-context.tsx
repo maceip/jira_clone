@@ -1,5 +1,5 @@
 "use client";
-import { type IssueType } from "@/utils/types";
+import { type IssueType } from "utils/types";
 import { type Sprint } from "@prisma/client";
 import { type ReactNode, createContext, useContext, useState } from "react";
 import { type UserResource } from "@clerk/types";

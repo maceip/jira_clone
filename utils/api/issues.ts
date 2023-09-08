@@ -4,18 +4,18 @@ import {
   type PatchIssuesBody,
   type GetIssuesResponse,
   type PostIssueBody,
-} from "@/app/api/issues/route";
+} from "./app/api/issues/route";
 import {
   type PatchIssueBody,
   type GetIssueDetailsResponse,
   type PatchIssueResponse,
   type PostIssueResponse,
-} from "@/app/api/issues/[issueId]/route";
+} from "./app/api/issues/[issueId]/route";
 import {
   type GetIssueCommentResponse,
   type GetIssueCommentsResponse,
   type PostCommentBody,
-} from "@/app/api/issues/[issueId]/comments/route";
+} from "./app/api/issues/[issueId]/comments/route";
 
 const baseUrl = getBaseUrl();
 

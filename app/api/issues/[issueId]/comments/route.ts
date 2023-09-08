@@ -1,10 +1,10 @@
 import { type NextRequest, NextResponse } from "next/server";
-import { prisma, ratelimit } from "@/server/db";
+import { prisma, ratelimit } from "server/db";
 import { type DefaultUser, type Comment } from "@prisma/client";
 import { z } from "zod";
 import { getAuth } from "@clerk/nextjs/server";
 import { clerkClient } from "@clerk/nextjs";
-import { filterUserForClient } from "@/utils/helpers";
+import { filterUserForClient } from "utils/helpers";
 
 export type GetIssueCommentsResponse = {
   comments: GetIssueCommentResponse["comment"][];

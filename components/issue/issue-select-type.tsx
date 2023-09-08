@@ -1,6 +1,6 @@
 import { useState } from "react";
 import clsx from "clsx";
-import { type IssueType } from "@/utils/types";
+import { type IssueType } from "utils/types";
 import { IssueIcon } from "./issue-icon";
 import { FaChevronDown } from "react-icons/fa";
 import {
@@ -13,9 +13,9 @@ import {
   SelectTrigger,
   SelectValue,
   SelectViewport,
-} from "@/components/ui/select";
+} from "components/ui/select";
 import { TooltipWrapper } from "../ui/tooltip";
-import { capitalize } from "@/utils/helpers";
+import { capitalize } from "utils/helpers";
 
 export const ISSUE_TYPES: IssueType["type"][] = ["STORY", "TASK", "BUG"];
 const SUBTASK_OPTIONS: IssueType["type"][] = ["SUBTASK"];

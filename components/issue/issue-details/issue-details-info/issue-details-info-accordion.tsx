@@ -1,19 +1,19 @@
 import { useUser } from "@clerk/nextjs";
 import { FaChevronUp } from "react-icons/fa";
-import { Button } from "@/components/ui/button";
+import { Button } from "components/ui/button";
 import { useState } from "react";
-import { type IssueType } from "@/utils/types";
+import { type IssueType } from "utils/types";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
-import { Avatar } from "@/components/avatar";
-import { useSprints } from "@/hooks/query-hooks/use-sprints";
+} from "components/ui/accordion";
+import { Avatar } from "components/avatar";
+import { useSprints } from "hooks/query-hooks/use-sprints";
 import { IssueAssigneeSelect } from "../../issue-select-assignee";
-import { useIssues } from "@/hooks/query-hooks/use-issues";
-import { useIsAuthenticated } from "@/hooks/use-is-authed";
+import { useIssues } from "hooks/query-hooks/use-issues";
+import { useIsAuthenticated } from "hooks/use-is-authed";
 
 const IssueDetailsInfoAccordion: React.FC<{ issue: IssueType }> = ({
   issue,

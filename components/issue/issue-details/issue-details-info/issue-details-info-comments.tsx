@@ -1,22 +1,22 @@
-import { useIssueDetails } from "@/hooks/query-hooks/use-issue-details";
+import { useIssueDetails } from "hooks/query-hooks/use-issue-details";
 import { type UserResource } from "@clerk/types";
-import { type GetIssueCommentResponse } from "@/app/api/issues/[issueId]/comments/route";
+import { type GetIssueCommentResponse } from "./app/api/issues/[issueId]/comments/route";
 import {
   Editor,
   type EditorContentType,
-} from "@/components/text-editor/editor";
-import { useKeydownListener } from "@/hooks/use-keydown-listener";
+} from "components/text-editor/editor";
+import { useKeydownListener } from "hooks/use-keydown-listener";
 import { Fragment, useRef, useState } from "react";
-import { useIsInViewport } from "@/hooks/use-is-in-viewport";
+import { useIsInViewport } from "hooks/use-is-in-viewport";
 import { useUser } from "@clerk/clerk-react";
 import { type SerializedEditorState } from "lexical";
-import { type IssueType } from "@/utils/types";
-import { Avatar } from "@/components/avatar";
+import { type IssueType } from "utils/types";
+import { Avatar } from "components/avatar";
 import dayjs from "dayjs";
 import relativeTime from "dayjs/plugin/relativeTime";
-import { EditorPreview } from "@/components/text-editor/preview";
-import { Button } from "@/components/ui/button";
-import { useIsAuthenticated } from "@/hooks/use-is-authed";
+import { EditorPreview } from "components/text-editor/preview";
+import { Button } from "components/ui/button";
+import { useIsAuthenticated } from "hooks/use-is-authed";
 dayjs.extend(relativeTime);
 
 const Comments: React.FC<{ issue: IssueType }> = ({ issue }) => {

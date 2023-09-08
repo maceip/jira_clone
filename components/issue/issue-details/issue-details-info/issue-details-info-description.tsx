@@ -1,10 +1,10 @@
-import { Editor } from "@/components/text-editor/editor";
+import { Editor } from "components/text-editor/editor";
 import { type SerializedEditorState } from "lexical";
-import { EditorPreview } from "@/components/text-editor/preview";
+import { EditorPreview } from "components/text-editor/preview";
 import { Fragment, useState } from "react";
-import { type IssueType } from "@/utils/types";
-import { useIssues } from "@/hooks/query-hooks/use-issues";
-import { useIsAuthenticated } from "@/hooks/use-is-authed";
+import { type IssueType } from "utils/types";
+import { useIssues } from "hooks/query-hooks/use-issues";
+import { useIsAuthenticated } from "hooks/use-is-authed";
 const Description: React.FC<{ issue: IssueType }> = ({ issue }) => {
   const [isEditing, setIsEditing] = useState(false);
   const { updateIssue } = useIssues();

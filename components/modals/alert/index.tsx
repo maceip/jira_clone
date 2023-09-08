@@ -6,8 +6,8 @@ import {
   ModalOverlay,
   ModalPortal,
   ModalTitle,
-} from "@/components/ui/alert-modal";
-import { Button } from "@/components/ui/button";
+} from "components/ui/alert-modal";
+import { Button } from "components/ui/button";
 import { IoWarning } from "react-icons/io5";
 
 const AlertModal: React.FC<{

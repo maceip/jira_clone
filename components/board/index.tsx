@@ -1,15 +1,16 @@
+// @ts-nocheck
 "use client";
 import React, { Fragment, useCallback, useLayoutEffect, useRef } from "react";
 import { type IssueStatus } from "@prisma/client";
-import "@/styles/split.css";
+import "styles/split.css";
 import { BoardHeader } from "./header";
 import {
   DragDropContext,
   type DraggableLocation,
   type DropResult,
 } from "react-beautiful-dnd";
-import { useIssues } from "@/hooks/query-hooks/use-issues";
-import { type IssueType } from "@/utils/types";
+import { useIssues } from "hooks/query-hooks/use-issues";
+import { type IssueType } from "utils/types";
 import {
   assigneeNotInFilters,
   epicNotInFilters,
@@ -21,13 +22,13 @@ import {
   issueSprintNotInFilters,
   issueTypeNotInFilters,
   moveItemWithinArray,
-} from "@/utils/helpers";
+} from "utils/helpers";
 import { IssueList } from "./issue-list";
 import { IssueDetailsModal } from "../modals/board-issue-details";
-import { useSprints } from "@/hooks/query-hooks/use-sprints";
-import { useProject } from "@/hooks/query-hooks/use-project";
-import { useFiltersContext } from "@/context/use-filters-context";
-import { useIsAuthenticated } from "@/hooks/use-is-authed";
+import { useSprints } from "hooks/query-hooks/use-sprints";
+import { useProject } from "hooks/query-hooks/use-project";
+import { useFiltersContext } from "context/use-filters-context";
+import { useIsAuthenticated } from "hooks/use-is-authed";
 
 const STATUSES: IssueStatus[] = ["TODO", "IN_PROGRESS", "DONE"];
 

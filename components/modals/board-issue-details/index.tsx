@@ -1,11 +1,11 @@
-import { IssueDetails } from "@/components/issue/issue-details";
+import { IssueDetails } from "components/issue/issue-details";
 import {
   Modal,
   ModalContent,
   ModalOverlay,
   ModalPortal,
-} from "@/components/ui/modal";
-import { useSelectedIssueContext } from "@/context/use-selected-issue-context";
+} from "components/ui/modal";
+import { useSelectedIssueContext } from "context/use-selected-issue-context";
 import { useEffect, useState } from "react";
 
 const IssueDetailsModal: React.FC = () => {

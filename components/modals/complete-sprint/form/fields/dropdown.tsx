@@ -11,9 +11,9 @@ import {
   SelectTrigger,
   SelectValue,
   SelectViewport,
-} from "@/components/ui/select";
-import { Label } from "@/components/form/label";
-import { useSprints } from "@/hooks/query-hooks/use-sprints";
+} from "components/ui/select";
+import { Label } from "components/form/label";
+import { useSprints } from "hooks/query-hooks/use-sprints";
 
 const SprintDropdown: React.FC = () => {
   const { sprints } = useSprints();

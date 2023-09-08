@@ -8,7 +8,7 @@ import {
   ModalPortal,
   ModalTitle,
   ModalTrigger,
-} from "@/components/ui/modal";
+} from "components/ui/modal";
 import { type Sprint } from "@prisma/client";
 import { StartSprintForm } from "./form";
 

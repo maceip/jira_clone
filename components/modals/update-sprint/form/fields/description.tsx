@@ -1,5 +1,5 @@
 import { type UseFormRegister } from "react-hook-form";
-import { Label } from "@/components/form/label";
+import { Label } from "components/form/label";
 import { type FormValues } from "..";
 
 const DescriptionField: React.FC<{

@@ -3,7 +3,7 @@ import {
   BreadCrumbSkeleton,
   SprintSearchSkeleton,
   TitleSkeleton,
-} from "@/components/skeletons";
+} from "components/skeletons";
 
 const BoardSkeleton = () => {
   return (

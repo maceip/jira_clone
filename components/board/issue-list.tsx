@@ -1,11 +1,11 @@
-import { useStrictModeDroppable } from "@/hooks/use-strictmode-droppable";
-import { type IssueType } from "@/utils/types";
+import { useStrictModeDroppable } from "hooks/use-strictmode-droppable";
+import { type IssueType } from "utils/types";
 import { Droppable } from "react-beautiful-dnd";
 import { Issue } from "./issue";
 import clsx from "clsx";
 import { statusMap } from "../issue/issue-select-status";
 import { type IssueStatus } from "@prisma/client";
-import { getPluralEnd } from "@/utils/helpers";
+import { getPluralEnd } from "utils/helpers";
 
 const IssueList: React.FC<{ status: IssueStatus; issues: IssueType[] }> = ({
   status,

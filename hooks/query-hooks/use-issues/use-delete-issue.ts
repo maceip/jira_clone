@@ -1,8 +1,8 @@
 "use client";
-import { toast } from "@/components/toast";
-import { useSelectedIssueContext } from "@/context/use-selected-issue-context";
-import { api } from "@/utils/api";
-import { type IssueType } from "@/utils/types";
+import { toast } from "components/toast";
+import { useSelectedIssueContext } from "context/use-selected-issue-context";
+import { api } from "utils/api";
+import { type IssueType } from "utils/types";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { type AxiosError } from "axios";
 import { TOO_MANY_REQUESTS } from ".";

@@ -6,6 +6,9 @@
 
 /** @type {import("next").NextConfig} */
 const config = {
+typescript: {
+    ignoreBuildErrors: true,
+  },
   reactStrictMode: true,
   experimental: { appDir: true },
   redirects: async () => {

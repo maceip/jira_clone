@@ -10,9 +10,9 @@ import {
   SelectViewport,
 } from "./ui/select";
 import { useState } from "react";
-import { type IssueType } from "@/utils/types";
-import { useIssues } from "@/hooks/query-hooks/use-issues";
-import { useIsAuthenticated } from "@/hooks/use-is-authed";
+import { type IssueType } from "utils/types";
+import { useIssues } from "hooks/query-hooks/use-issues";
+import { useIsAuthenticated } from "hooks/use-is-authed";
 
 export const LIGHT_COLORS = [
   { hex: "#9f8fef", label: "purple" },

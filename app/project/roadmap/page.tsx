@@ -1,13 +1,13 @@
 import { type Metadata } from "next";
-import { getQueryClient } from "@/utils/get-query-client";
-import { Hydrate } from "@/utils/hydrate";
+import { getQueryClient } from "utils/get-query-client";
+import { Hydrate } from "utils/hydrate";
 import { dehydrate } from "@tanstack/query-core";
-import { Roadmap } from "@/components/roadmap";
+import { Roadmap } from "components/roadmap";
 import {
   getInitialIssuesFromServer,
   getInitialProjectFromServer,
   getInitialSprintsFromServer,
-} from "@/server/functions";
+} from "server/functions";
 import { currentUser } from "@clerk/nextjs";
 
 export const metadata: Metadata = {

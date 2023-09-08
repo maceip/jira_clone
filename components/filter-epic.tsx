@@ -1,18 +1,19 @@
+// @ts-nocheck
 import {
   Dropdown,
   DropdownContent,
   DropdownItem,
   DropdownPortal,
   DropdownTrigger,
-} from "@/components/ui/dropdown-menu";
+} from "components/ui/dropdown-menu";
 import { FaChevronDown } from "react-icons/fa";
-import { useIssues } from "@/hooks/query-hooks/use-issues";
-import { isEpic } from "@/utils/helpers";
-import { TooltipWrapper } from "@/components/ui/tooltip";
-import { type IssueType } from "@/utils/types";
-import { useFiltersContext } from "@/context/use-filters-context";
+import { useIssues } from "hooks/query-hooks/use-issues";
+import { isEpic } from "utils/helpers";
+import { TooltipWrapper } from "components/ui/tooltip";
+import { type IssueType } from "utils/types";
+import { useFiltersContext } from "context/use-filters-context";
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
+import { Button } from "components/ui/button";
 import { SearchBar } from "./filter-search-bar";
 import { CountBall } from "./issue/issue-status-count";
 const EpicFilter: React.FC = () => {

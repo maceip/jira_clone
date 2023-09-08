@@ -1,5 +1,5 @@
-import { dateToLongString } from "@/utils/helpers";
-import { type IssueType } from "@/utils/types";
+import { dateToLongString } from "utils/helpers";
+import { type IssueType } from "utils/types";
 
 const IssueMetaInfo: React.FC<{ issue: IssueType }> = ({ issue }) => {
   return (

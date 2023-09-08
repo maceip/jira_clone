@@ -1,6 +1,6 @@
 "use client";
 
-import { type IssueType } from "@/utils/types";
+import { type IssueType } from "utils/types";
 import { usePathname, useSearchParams } from "next/navigation";
 import {
   type ReactNode,

@@ -7,15 +7,15 @@ import {
   SelectTrigger,
   SelectValue,
   SelectViewport,
-} from "@/components/ui/select";
+} from "components/ui/select";
 import clsx from "clsx";
-import { useProject } from "@/hooks/query-hooks/use-project";
-import { type IssueType } from "@/utils/types";
+import { useProject } from "hooks/query-hooks/use-project";
+import { type IssueType } from "utils/types";
 import { Fragment, useState } from "react";
-import { useIssues } from "@/hooks/query-hooks/use-issues";
+import { useIssues } from "hooks/query-hooks/use-issues";
 import { Avatar } from "../avatar";
 import { toast } from "../toast";
-import { useIsAuthenticated } from "@/hooks/use-is-authed";
+import { useIsAuthenticated } from "hooks/use-is-authed";
 import { type DefaultUser } from "@prisma/client";
 
 const IssueAssigneeSelect: React.FC<{

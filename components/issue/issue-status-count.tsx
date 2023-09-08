@@ -1,6 +1,6 @@
 "use client";
-import { getIssueCountByStatus } from "@/utils/helpers";
-import { type IssueType } from "@/utils/types";
+import { getIssueCountByStatus } from "utils/helpers";
+import { type IssueType } from "utils/types";
 import clsx from "clsx";
 import { Fragment, useCallback, useEffect, useState } from "react";
 

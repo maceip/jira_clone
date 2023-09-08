@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
-import { getIssueCountByStatus } from "@/utils/helpers";
-import { TooltipWrapper } from "@/components/ui/tooltip";
-import { type IssueType } from "@/utils/types";
+import { getIssueCountByStatus } from "utils/helpers";
+import { TooltipWrapper } from "components/ui/tooltip";
+import { type IssueType } from "utils/types";
 import clsx from "clsx";
 
 const ProgressBar: React.FC<{

@@ -1,9 +1,9 @@
 "use client";
 import React, { Fragment, useLayoutEffect, useRef } from "react";
-import { useSelectedIssueContext } from "@/context/use-selected-issue-context";
-import "@/styles/split.css";
+import { useSelectedIssueContext } from "context/use-selected-issue-context";
+import "styles/split.css";
 import { RoadmapHeader } from "./header";
-import { useProject } from "@/hooks/query-hooks/use-project";
+import { useProject } from "hooks/query-hooks/use-project";
 import Split from "react-split";
 import { IssueDetails } from "../issue/issue-details";
 import { notFound } from "next/navigation";

@@ -1,5 +1,5 @@
 import { type IssueCountType } from "./types";
-import { type IssueType } from "@/utils/types";
+import { type IssueType } from "utils/types";
 import type { User as ClerkUser } from "@clerk/nextjs/api";
 import { type DefaultUser, type Issue } from "@prisma/client";
 

@@ -1,7 +1,7 @@
 import { type ReactNode } from "react";
-import { useIssues } from "@/hooks/query-hooks/use-issues";
-import { type IssueType } from "@/utils/types";
-import { type MenuOptionType } from "@/utils/types";
+import { useIssues } from "hooks/query-hooks/use-issues";
+import { type IssueType } from "utils/types";
+import { type MenuOptionType } from "utils/types";
 import clsx from "clsx";
 import {
   Dropdown,
@@ -10,7 +10,7 @@ import {
   DropdownItem,
   DropdownLabel,
   DropdownPortal,
-} from "@/components/ui/dropdown-menu";
+} from "components/ui/dropdown-menu";
 import {
   Context,
   ContextContent,
@@ -18,8 +18,8 @@ import {
   ContextItem,
   ContextLabel,
   ContextPortal,
-} from "@/components/ui/context-menu";
-import { useIsAuthenticated } from "@/hooks/use-is-authed";
+} from "components/ui/context-menu";
+import { useIsAuthenticated } from "hooks/use-is-authed";
 
 type MenuOptionsType = {
   actions: MenuOptionType[];

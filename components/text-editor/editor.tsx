@@ -6,13 +6,13 @@ import { RichTextPlugin } from "@lexical/react/LexicalRichTextPlugin";
 import { ContentEditable } from "@lexical/react/LexicalContentEditable";
 import { OnChangePlugin } from "@lexical/react/LexicalOnChangePlugin";
 import { HistoryPlugin } from "@lexical/react/LexicalHistoryPlugin";
-import { Button } from "@/components/ui/button";
+import { Button } from "components/ui/button";
 import { ListPlugin } from "@lexical/react/LexicalListPlugin";
 import { AutoFocusPlugin } from "@lexical/react/LexicalAutoFocusPlugin";
 import ToolbarPlugin from "./plugins/toolbar-plugin";
 import { useSharedHistoryContext } from "./context/shared-history";
 import CodeHighlightPlugin from "./plugins/code-highlight-plugin";
-import { EditorComposer } from "./context/lexical-composer";
+import { EditorComposer } from "./context/shared-history";
 import clsx from "clsx";
 
 export type EditorContentType = SerializedEditorState | undefined;

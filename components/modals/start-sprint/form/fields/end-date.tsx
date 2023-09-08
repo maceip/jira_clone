@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { type FormValues, DEFAULT_DURATION } from "..";
-import { Label } from "@/components/form/label";
-import { Error } from "@/components/form/error";
+import { Label } from "components/form/label";
+import { Error } from "components/form/error";
 import clsx from "clsx";
 import {
   type UseFormSetValue,

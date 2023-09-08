@@ -1,17 +1,17 @@
 "use client";
 import { Fragment, useEffect, useState } from "react";
 import { FaChevronRight } from "react-icons/fa";
-import { Button } from "@/components/ui/button";
+import { Button } from "components/ui/button";
 import { IssueList } from "./issue-list";
 import { IssueStatusCount } from "../issue/issue-status-count";
-import { type IssueType } from "@/utils/types";
+import { type IssueType } from "utils/types";
 import {
   Accordion,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
-import { useSprints } from "@/hooks/query-hooks/use-sprints";
-import { useIsAuthenticated } from "@/hooks/use-is-authed";
+} from "components/ui/accordion";
+import { useSprints } from "hooks/query-hooks/use-sprints";
+import { useIsAuthenticated } from "hooks/use-is-authed";
 
 const BacklogList: React.FC<{
   id: string;

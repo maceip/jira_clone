@@ -2,27 +2,27 @@
 import { Fragment, useEffect, useState } from "react";
 import { FaChevronRight } from "react-icons/fa";
 import { BsThreeDots } from "react-icons/bs";
-import { Button } from "@/components/ui/button";
+import { Button } from "components/ui/button";
 import { IssueList } from "./issue-list";
 import { IssueStatusCount } from "../issue/issue-status-count";
 import { type Sprint } from "@prisma/client";
-import { type IssueType } from "@/utils/types";
+import { type IssueType } from "utils/types";
 import { SprintDropdownMenu } from "./sprint-menu";
 import { DropdownTrigger } from "../ui/dropdown-menu";
 import {
   Accordion,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
-import { StartSprintModal } from "@/components/modals/start-sprint";
+} from "components/ui/accordion";
+import { StartSprintModal } from "components/modals/start-sprint";
 import { CompleteSprintModal } from "../modals/complete-sprint";
 import { UpdateSprintModal } from "../modals/update-sprint";
 import { AlertModal } from "../modals/alert";
 import { useQueryClient } from "@tanstack/react-query";
-import { useSprints } from "@/hooks/query-hooks/use-sprints";
+import { useSprints } from "hooks/query-hooks/use-sprints";
 import { toast } from "../toast";
-import { useIsAuthenticated } from "@/hooks/use-is-authed";
-import { getPluralEnd } from "@/utils/helpers";
+import { useIsAuthenticated } from "hooks/use-is-authed";
+import { getPluralEnd } from "utils/helpers";
 
 const SprintList: React.FC<{
   sprint: Sprint;

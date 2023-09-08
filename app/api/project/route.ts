@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { prisma } from "@/server/db";
+import { prisma } from "server/db";
 import { type Project } from "@prisma/client";
 
 export type GetProjectResponse = {

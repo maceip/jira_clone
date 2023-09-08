@@ -1,11 +1,11 @@
 import { ClerkProvider } from "@clerk/nextjs/app-beta";
 import { type Metadata } from "next";
-import { siteConfig } from "@/config/site";
-import "@/styles/globals.css";
-import Toaster from "@/components/toast";
-import QueryProvider from "@/utils/provider";
-import { AuthModalProvider } from "@/context/use-auth-modal";
-import { AuthModal } from "@/components/modals/auth";
+import { siteConfig } from "config/site";
+import "styles/globals.css";
+import Toaster from "components/toast";
+import QueryProvider from "utils/provider";
+import { AuthModalProvider } from "context/use-auth-modal";
+import { AuthModal } from "components/modals/auth";
 
 export const metadata: Metadata = {
   title: {

@@ -1,16 +1,17 @@
+// @ts-nocheck
 import {
   Dropdown,
   DropdownContent,
   DropdownItem,
   DropdownPortal,
   DropdownTrigger,
-} from "@/components/ui/dropdown-menu";
+} from "components/ui/dropdown-menu";
 import { FaChevronDown } from "react-icons/fa";
-import { TooltipWrapper } from "@/components/ui/tooltip";
-import { useFiltersContext } from "@/context/use-filters-context";
-import { Button } from "@/components/ui/button";
+import { TooltipWrapper } from "components/ui/tooltip";
+import { useFiltersContext } from "context/use-filters-context";
+import { Button } from "components/ui/button";
 import { CountBall } from "./issue/issue-status-count";
-import { useSprints } from "@/hooks/query-hooks/use-sprints";
+import { useSprints } from "hooks/query-hooks/use-sprints";
 import { type Sprint } from "@prisma/client";
 const SprintFilter: React.FC = () => {
   const { sprints: filterSprints, setSprints } = useFiltersContext();

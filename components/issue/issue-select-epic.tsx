@@ -1,9 +1,9 @@
 import { type ReactNode, useState } from "react";
-import { useIssues } from "@/hooks/query-hooks/use-issues";
+import { useIssues } from "hooks/query-hooks/use-issues";
 import clsx from "clsx";
 import { IssueIcon } from "./issue-icon";
-import { type IssueType } from "@/utils/types";
-import { isEpic } from "@/utils/helpers";
+import { type IssueType } from "utils/types";
+import { isEpic } from "utils/helpers";
 import {
   Select,
   SelectContent,
@@ -14,9 +14,9 @@ import {
   SelectTrigger,
   SelectValue,
   SelectViewport,
-} from "@/components/ui/select";
+} from "components/ui/select";
 import { TooltipWrapper } from "../ui/tooltip";
-import { useIsAuthenticated } from "@/hooks/use-is-authed";
+import { useIsAuthenticated } from "hooks/use-is-authed";
 
 const IssueSelectEpic: React.FC<{
   issue: IssueType;

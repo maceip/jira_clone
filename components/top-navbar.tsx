@@ -3,7 +3,7 @@ import { SignInButton, useUser, UserButton } from "@clerk/nextjs";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { AiFillGithub, AiFillStar } from "react-icons/ai";
-import { useFullURL } from "@/hooks/use-full-url";
+import { useFullURL } from "hooks/use-full-url";
 import { useEffect, useState } from "react";
 
 const TopNavbar: React.FC = () => {

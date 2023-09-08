@@ -1,7 +1,7 @@
 import { type Control, Controller, type FieldErrors } from "react-hook-form";
 import { type FormValues } from "..";
-import { Label } from "@/components/form/label";
-import { Error } from "@/components/form/error";
+import { Label } from "components/form/label";
+import { Error } from "components/form/error";
 import clsx from "clsx";
 import { FaChevronDown } from "react-icons/fa";
 import {
@@ -14,8 +14,8 @@ import {
   SelectTrigger,
   SelectValue,
   SelectViewport,
-} from "@/components/ui/select";
-import { useSprints } from "@/hooks/query-hooks/use-sprints";
+} from "components/ui/select";
+import { useSprints } from "hooks/query-hooks/use-sprints";
 
 const SprintDropdownField: React.FC<{
   control: Control<FormValues, "duration">;

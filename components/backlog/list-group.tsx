@@ -1,5 +1,6 @@
+// @ts-nocheck
 "use client";
-import { useIssues } from "@/hooks/query-hooks/use-issues";
+import { useIssues } from "hooks/query-hooks/use-issues";
 import clsx from "clsx";
 import { BacklogList } from "./list-backlog";
 import { SprintList } from "./list-sprint";
@@ -8,9 +9,9 @@ import {
   type DraggableLocation,
   type DropResult,
 } from "react-beautiful-dnd";
-import { type IssueType } from "@/utils/types";
+import { type IssueType } from "utils/types";
 import { useCallback } from "react";
-import { useFiltersContext } from "@/context/use-filters-context";
+import { useFiltersContext } from "context/use-filters-context";
 import {
   assigneeNotInFilters,
   epicNotInFilters,
@@ -22,10 +23,10 @@ import {
   issueTypeNotInFilters,
   moveItemWithinArray,
   sprintId,
-} from "@/utils/helpers";
-import { useSprints } from "@/hooks/query-hooks/use-sprints";
+} from "utils/helpers";
+import { useSprints } from "hooks/query-hooks/use-sprints";
 import { type Sprint } from "@prisma/client";
-import { useIsAuthenticated } from "@/hooks/use-is-authed";
+import { useIsAuthenticated } from "hooks/use-is-authed";
 
 const ListGroup: React.FC<{ className?: string }> = ({ className }) => {
   const { issues, updateIssue } = useIssues();

@@ -3,9 +3,9 @@ import { AiOutlineLike } from "react-icons/ai";
 import { IssueDropdownMenu } from "../issue-menu";
 import { DropdownTrigger } from "../../ui/dropdown-menu";
 import { IssuePath } from "../issue-path";
-import { type IssueType } from "@/utils/types";
-import { NotImplemented } from "@/components/not-implemented";
-import { Button } from "@/components/ui/button";
+import { type IssueType } from "utils/types";
+import { NotImplemented } from "components/not-implemented";
+import { Button } from "components/ui/button";
 import { BsThreeDots } from "react-icons/bs";
 
 const IssueDetailsHeader: React.FC<{

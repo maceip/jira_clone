@@ -1,5 +1,5 @@
 import { type NextRequest, NextResponse } from "next/server";
-import { prisma, ratelimit } from "@/server/db";
+import { prisma, ratelimit } from "server/db";
 import {
   IssueStatus,
   type Issue,
@@ -9,7 +9,7 @@ import {
 import { z } from "zod";
 import { type GetIssuesResponse } from "../route";
 import { clerkClient } from "@clerk/nextjs";
-import { filterUserForClient } from "@/utils/helpers";
+import { filterUserForClient } from "utils/helpers";
 import { getAuth } from "@clerk/nextjs/server";
 
 export type GetIssueDetailsResponse = {

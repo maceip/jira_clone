@@ -3,11 +3,11 @@ import { getBaseUrl, getHeaders } from "../helpers";
 import {
   type GetSprintsResponse,
   type PostSprintResponse,
-} from "@/app/api/sprints/route";
+} from "./app/api/sprints/route";
 import {
   type PatchSprintBody,
   type PatchSprintResponse,
-} from "@/app/api/sprints/[sprint_id]/route";
+} from "./app/api/sprints/[sprint_id]/route";
 
 const baseUrl = getBaseUrl();
 

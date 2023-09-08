@@ -1,8 +1,8 @@
 import { type NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
-import { prisma, ratelimit } from "@/server/db";
+import { prisma, ratelimit } from "server/db";
 import { clerkClient } from "@clerk/nextjs";
-import { filterUserForClient } from "@/utils/helpers";
+import { filterUserForClient } from "utils/helpers";
 import { getAuth } from "@clerk/nextjs/server";
 
 const patchCommentBodyValidator = z.object({

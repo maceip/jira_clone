@@ -1,11 +1,11 @@
 import { Fragment, useState } from "react";
-import { useIssues } from "@/hooks/query-hooks/use-issues";
+import { useIssues } from "hooks/query-hooks/use-issues";
 import { FaChevronDown } from "react-icons/fa";
 import clsx from "clsx";
 import { type IssueStatus } from "@prisma/client";
-import { type IssueType } from "@/utils/types";
-import { NotImplemented } from "@/components/not-implemented";
-import { capitalizeMany } from "@/utils/helpers";
+import { type IssueType } from "utils/types";
+import { NotImplemented } from "components/not-implemented";
+import { capitalizeMany } from "utils/helpers";
 import {
   Select,
   SelectContent,
@@ -17,8 +17,8 @@ import {
   SelectTrigger,
   SelectValue,
   SelectViewport,
-} from "@/components/ui/select";
-import { useIsAuthenticated } from "@/hooks/use-is-authed";
+} from "components/ui/select";
+import { useIsAuthenticated } from "hooks/use-is-authed";
 
 export const statuses: StatusObject[] = [
   {

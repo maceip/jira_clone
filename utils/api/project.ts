@@ -1,7 +1,7 @@
-import { type GetProjectResponse } from "@/app/api/project/route";
+import { type GetProjectResponse } from "./app/api/project/route";
 import axios from "axios";
 import { getBaseUrl } from "../helpers";
-import { type GetProjectMembersResponse } from "@/app/api/project/[project_id]/members/route";
+import { type GetProjectMembersResponse } from "./app/api/project/[project_id]/members/route";
 
 const baseUrl = getBaseUrl();
 
