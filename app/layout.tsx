@@ -45,7 +45,7 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => {
     <html lang="en">
       <head />
       <body>
-        <ClerkProvider>
+        <ClerkProvider publishableKey={"pk_live_Y2xlcmsuYXBwc3RvcmUuZm91bmRhdGlvbiQ"}>
           <QueryProvider>
             <AuthModalProvider>
               <AuthModal />
